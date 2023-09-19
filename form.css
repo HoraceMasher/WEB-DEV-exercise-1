@@ -1,0 +1,107 @@
+
+  body {
+    background-color: whitesmoke;
+    font-family: Arial, sans-serif;
+
+}
+
+
+.welcome-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+.welcome-subheading {
+    font-size: 20px;
+    color: #666;
+    margin-top: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.welcome-button {
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.welcome-button:hover {
+    background-color: #c28a22;
+}
+
+img {
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.container:hover img {
+    opacity: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
+.fade-shape {
+    position: absolute;
+    border-radius: 70%;
+    background-color: rgba(166, 198, 197, 0.5);
+    animation: fade 5s infinite;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); 
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.form-check-label i {
+    margin-right: 5px; 
+}
+
+.user-list {
+    margin-top: 20px;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+    border-top: 2px solid #dee2e6;
+}
+
